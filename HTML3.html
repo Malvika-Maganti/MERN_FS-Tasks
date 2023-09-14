@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML-TASK-3</title>
+    <style>
+      ul.horizontal-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      ul.horizontal-list li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      ul.horizontal-list li:not(:last-child)::after {
+        content: "|";
+        margin-left: 10px;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <p>Click any of the following links:</p>
+      <ul class="horizontal-list">
+        <li><a href="https://youtube.com" target="_blank">Opens in New</a></li>
+        <li><a href="https://youtube.com" target="_self">Opens in Self</a></li>
+        <li>
+          <a href="https://youtube.com" target="_parent">Opens in Parent</a>
+        </li>
+        <li><a href="https://youtube.com" target="_self">Opens in Body</a></li>
+        <li><a href="mailto:example@example.com">Send email</a></li>
+      </ul>
+    </fieldset>
+  </body>
+</html>

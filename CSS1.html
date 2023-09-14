@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS-TASK-1</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      .table-container {
+        margin-bottom: 20px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #98ced4;
+        margin: 0 auto;
+      }
+
+      .shape-container {
+        text-align: center;
+      }
+
+      .shape {
+        width: 100px;
+        height: 80px;
+        margin: 5px;
+        display: inline-block;
+        border: 2px solid rgb(66, 183, 66);
+        border-radius: 15px;
+      }
+
+      .sharp-rectangle {
+        width: 100px;
+        height: 80px;
+        margin: 5px;
+        display: inline-block;
+        border: px solid rgb(66, 183, 66);
+        border-radius: 0;
+      }
+
+      .rounded-opposite {
+        border-radius: 18px 15px 15px 15px;
+      }
+
+      .sharp-opposite {
+        border-radius: 0px 15px 0px 15px;
+      }
+
+      .oval {
+        width: 100px;
+        height: 80px;
+        margin: 5px;
+        display: inline-block;
+        border: 2px solid rgb(66, 183, 66);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-container">
+      <table style="width: 80%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>80</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="shape-container">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape rounded-opposite"></div>
+      <br />
+
+      <div class="shape"></div>
+      <div class="shape sharp-rectangle"></div>
+      <div class="shape"></div>
+      <br />
+
+      <div class="oval"></div>
+      <div class="shape sharp-rectangle"></div>
+      <div class="shape sharp-opposite"></div>
+    </div>
+  </body>
+</html>

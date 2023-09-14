@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-TASK-2</title>
+    <style>
+      /* Style for the first navigation bar */
+      .nav-bar1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: lightblue;
+        width: 180px;
+        border: 5px solid black;
+        border-style: double;
+        float: left;
+        margin-right: 20px;
+      }
+
+      .nav-bar1 li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      .nav-bar1 li a:hover {
+        background-color: orange;
+      }
+
+      /* Style for the second navigation bar */
+      .nav-bar2 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: lightgrey;
+        border: 5px solid black;
+        border-style: double;
+        display: flex;
+        float: right;
+        margin-top: 10px;
+        margin-right: 50%;
+      }
+
+      .nav-bar2 li {
+        display: inline-block;
+        position: relative;
+      }
+
+      .nav-bar2 li::after {
+        content: "|";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: black;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      .nav-bar2 li a {
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      .nav-bar2 li a:hover {
+        background-color: rgb(167, 160, 160);
+      }
+      .clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- First Navigation Bar -->
+    <p>Vertical Navigation Bar</p>
+    <ul class="nav-bar1">
+      <li><a href="https://google.com">Home</a></li>
+      <li><a href="https://java.com">Java</a></li>
+      <li><a href="https://css.com">CSS</a></li>
+      <li><a href="https://html.com">HTML</a></li>
+      <li><a href="https://getbootstrap.com">Bootstrap</a></li>
+    </ul>
+
+    <!-- Second Navigation Bar -->
+    <p style="text-align: right; margin-right: 60%">
+      Horizontal Navigation Bar
+    </p>
+    <div class="nav-bar2">
+      <ul>
+        <li><a href="https://google.com">Home</a></li>
+        <li><a href="https://java.com">Java</a></li>
+        <li><a href="https://css.com">CSS</a></li>
+        <li><a href="https://html.com">HTML</a></li>
+        <li><a href="https://getbootstrap.com">Bootstrap</a></li>
+      </ul>
+    </div>
+    <div class="clear"></div>
+  </body>
+</html>
